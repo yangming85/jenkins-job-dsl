@@ -27,7 +27,7 @@ pipelineJob('edx-platform-quality-pipeline-master') {
                         sparseCheckoutPaths {
                             sparseCheckoutPaths {
                                 sparseCheckoutPath {
-                                    path('scripts/Jenkinsfiles')
+                                    path('scripts')
                                 }
                             }
                         }
@@ -36,7 +36,7 @@ pipelineJob('edx-platform-quality-pipeline-master') {
                         credentials('jenkins-worker')
                         github('edx/edx-platform', 'ssh', 'github.com')
                         refspec('+refs/heads/master:refs/remotes/origin/master')
-                        branch('\${sha1}')
+                        branch('master')
                     }
                 }
             }

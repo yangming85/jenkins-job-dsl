@@ -61,7 +61,7 @@ pipelineJob('edx-platform-quality-pipeline-pr') {
                         sparseCheckoutPaths {
                             sparseCheckoutPaths {
                                 sparseCheckoutPath {
-                                    path('scripts/Jenkinsfiles')
+                                    path('scripts')
                                 }
                             }
                         }
